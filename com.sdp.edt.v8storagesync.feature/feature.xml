@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.sdp.edt.v8storagesync.feature"
+      label="V8 Storage Sync"
+      version="0.1.0"
+      provider-name="SDP">
+
+   <description>
+      Integration plugin for V8 Storage synchronization with Git in
+1C:EDT.
+   </description>
+
+   <license url="https://www.eclipse.org/legal/epl-2.0/">
+      Eclipse Public License 2.0
+   </license>
+
+   <url>
+      <discovery label="github v8storagesync" url="https://github.com/DmitryShehovtsev/v8storagesync"/>
+   </url>
+
+   <plugin
+         id="com.sdp.edt.v8storagesync.ui"
+         version="0.1.0"/>
+
+</feature>

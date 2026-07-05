@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: V8 Storage Sync
+Bundle-SymbolicName: com.sdp.edt.v8storagesync.ui;singleton:=true
+Bundle-Version: 0.1.0
+Bundle-Activator: com.sdp.edt.v8storagesync.ui.Activator
+Bundle-Vendor: SDP
+Bundle-Description: Integration plugin for V8 Storage synchronization with Git in 1C:EDT.
+Bundle-License: Eclipse Public License 2.0;https://www.eclipse.org/legal/epl-2.0/
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-ActivationPolicy: lazy
+Bundle-Localization: plugin
+Automatic-Module-Name: com.sdp.edt.v8storagesync.ui
+Import-Package: com._1c.g5.v8.dt.common.runtime;version="2.0.0",
+ com._1c.g5.v8.dt.core.platform;version="12.0.0",
+ com._1c.g5.v8.dt.platform.services.core.infobases;version="15.0.0",
+ com._1c.g5.v8.dt.platform.services.core.infobases.export;version="3.0.0",
+ com._1c.g5.v8.dt.platform.services.core.runtimes.environments;version="6.0.0",
+ com._1c.g5.v8.dt.platform.services.core.runtimes.execution;version="15.0.0",
+ com._1c.g5.v8.dt.platform.services.model;version="6.1.0",
+ com._1c.g5.wiring;version="2.4.0",
+ com.e1c.g5.dt.applications;version="6.0.0"
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources;bundle-version="3.20.0",
+ org.eclipse.ui.console;bundle-version="3.13.100",
+ org.eclipse.team.ui;bundle-version="3.8.0",
+ org.eclipse.jgit;bundle-version="6.8.11",
+ com._1c.g5.v8.dt.common.git;bundle-version="4.3.300"

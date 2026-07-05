@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension point="org.eclipse.ui.preferencePages">
+      <page
+            class="com.sdp.edt.v8storagesync.preferences.V8StoragePreferencePage"
+            id="com.sdp.edt.v8storagesync.ui.preferencePage"
+            name="%preferencePageName">
+      </page>
+    </extension>
+   <extension point="org.eclipse.ui.commands">
+      <command
+            id="com.sdp.edt.v8storagesync.ui.pullCommand"
+            name="%pullCommandName">
+      </command>
+      <command
+            id="com.sdp.edt.v8storagesync.ui.pushCommand"
+            name="%pushCommandName">
+      </command>
+   </extension>
+   <extension point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="toolbar:org.eclipse.team.ui.GenericHistoryView?after=additions">
+         <command
+               commandId="com.sdp.edt.v8storagesync.ui.pullCommand"
+               label="%pullCommandLabel"
+               style="push"
+               tooltip="%pullCommandTooltip"
+               icon="icons/pull.png">
+         </command>
+         <command
+               commandId="com.sdp.edt.v8storagesync.ui.pushCommand"
+               icon="icons/push.png"
+               label="%pushCommandLabel"
+               style="push"
+               tooltip="%pushCommandTooltip">
+         </command>
+      </menuContribution>
+   </extension>
+   <extension point="org.eclipse.ui.handlers">
+      <handler
+            commandId="com.sdp.edt.v8storagesync.ui.pullCommand"
+            class="com.sdp.edt.v8storagesync.ui.handlers.PullActionHandler">
+      </handler>
+      <handler
+            class="com.sdp.edt.v8storagesync.ui.handlers.PushActionHandler"
+            commandId="com.sdp.edt.v8storagesync.ui.pushCommand">
+      </handler>
+   </extension>
+</plugin>
