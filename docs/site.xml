@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/com.sdp.edt.v8storagesync.feature_0.1.0.jar" id="com.sdp.edt.v8storagesync.feature" version="0.1.0">
+   <feature url="features/com.sdp.edt.v8storagesync.feature_0.1.1.jar" id="com.sdp.edt.v8storagesync.feature" version="0.1.1">
       <category name="main"/>
    </feature>
    <category-def name="main" label="V8 Storage Sync">
