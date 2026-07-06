@@ -2,7 +2,7 @@
 <feature
       id="com.sdp.edt.v8storagesync.feature"
       label="V8 Storage Sync"
-      version="0.1.1"
+      version="0.1.2"
       provider-name="SDP">
 
    <description>
@@ -20,6 +20,6 @@
 
    <plugin
          id="com.sdp.edt.v8storagesync.ui"
-         version="0.1.1"/>
+         version="0.1.2"/>
 
 </feature>

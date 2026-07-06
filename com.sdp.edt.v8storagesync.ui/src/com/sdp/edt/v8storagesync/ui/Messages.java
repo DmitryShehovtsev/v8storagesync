@@ -49,7 +49,6 @@ public class Messages
     public static String GitActions_NoHeadCommit;
     public static String GitActions_HeadCommitInfo;
     public static String GitActions_ParentCommitInfo;
-    public static String GitActions_MergeParentCommitInfo;
     public static String GitActions_NoParentCommit;
     public static String GitActions_RepositoryMustNotBeNull;
 

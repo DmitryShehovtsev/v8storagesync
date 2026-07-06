@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: V8 Storage Sync
 Bundle-SymbolicName: com.sdp.edt.v8storagesync.ui;singleton:=true
-Bundle-Version: 0.1.1
+Bundle-Version: 0.1.2
 Bundle-Activator: com.sdp.edt.v8storagesync.ui.Activator
 Bundle-Vendor: SDP
 Bundle-Description: Integration plugin for V8 Storage synchronization with Git in 1C:EDT.

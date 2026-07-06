@@ -54,9 +54,7 @@ public class GitActions
                 return headInfo + System.lineSeparator() + Messages.GitActions_NoParentCommit;
             }
 
-            String parentText = parentInfo.defaultFromMergedBranch()
-                ? MessageFormat.format(Messages.GitActions_MergeParentCommitInfo, parentInfo.commitId())
-                : MessageFormat.format(Messages.GitActions_ParentCommitInfo, parentInfo.commitId());
+            String parentText = MessageFormat.format(Messages.GitActions_ParentCommitInfo, parentInfo.commitId());
 
             return headInfo + System.lineSeparator() + parentText;
         }

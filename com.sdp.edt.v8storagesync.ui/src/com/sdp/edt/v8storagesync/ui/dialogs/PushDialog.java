@@ -28,7 +28,7 @@ import com.sdp.edt.v8storagesync.ui.Messages;
 public class PushDialog
     extends Dialog
 {
-    private static final int DIALOG_WIDTH = 400;
+    private static final int DIALOG_WIDTH = 420;
     private static final int DIALOG_HEIGHT = 400;
     private static final int SPACER_HEIGHT = 10;
 
