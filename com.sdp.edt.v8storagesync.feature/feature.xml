@@ -11,8 +11,13 @@
    </description>
 
    <license url="https://www.eclipse.org/legal/epl-2.0/">
-      Eclipse Public License 2.0
-   </license>
+    Eclipse Public License 2.0
+    
+    Плагин V8 Storage Sync распространяется на условиях Eclipse Public License 2.0.
+    
+    Полный текст лицензии доступен по адресу:
+    https://www.eclipse.org/legal/epl-2.0/
+    </license>
 
    <url>
       <discovery label="github v8storagesync" url="https://github.com/DmitryShehovtsev/v8storagesync"/>
