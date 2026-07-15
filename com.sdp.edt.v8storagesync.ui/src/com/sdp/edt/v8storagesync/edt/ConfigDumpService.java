@@ -135,14 +135,27 @@ public class ConfigDumpService
         }
 
         String projectName = project.getName();
-        int separatorIndex = projectName.indexOf('.');
-        if (separatorIndex < 0 || separatorIndex == projectName.length() - 1)
+        int firstDotIndex = projectName.indexOf('.');
+        int lastDotIndex = projectName.lastIndexOf('.');
+
+        if (firstDotIndex != lastDotIndex)
         {
             String message = MessageFormat.format(Messages.ConfigDumpService_ExtensionNameNotFound, projectName);
             throw new CoreException(createErrorStatus(message));
         }
 
-        return projectName.substring(separatorIndex + 1);
+        if (firstDotIndex < 0)
+        {
+            return projectName;
+        }
+
+        if (firstDotIndex == 0 || firstDotIndex == projectName.length() - 1)
+        {
+            String message = MessageFormat.format(Messages.ConfigDumpService_ExtensionNameNotFound, projectName);
+            throw new CoreException(createErrorStatus(message));
+        }
+
+        return projectName.substring(firstDotIndex + 1);
     }
 
     private RuntimeInstallation resolveRuntime(IProject project, InfobaseReference infobase)
