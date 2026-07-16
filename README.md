@@ -118,3 +118,7 @@ https://github.com/DmitryShehovtsev/jeweltools
 Текст лицензии:
 
 `https://www.eclipse.org/legal/epl-2.0/`
+
+## Публикации
+
+<img src="https://infostart.ru/bitrix/templates/sandbox_empty/assets/tpl/abo/img/logo.svg" alt="Лого инфостарт" width="auto" height="auto"> [Синхронизация проекта 1C:EDT с хранилищем конфигурации](https://infostart.ru/public/2732922/)
